@@ -1,0 +1,11 @@
+[package]
+name = "VoidDiscordBot"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serenity = {version = "0.12.5", features = ["client", "gateway", "rustls_backend", "model"] }
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+dotenv = "0.15"
+tracing = "0.1.23"
+tracing-subscriber = "0.3"
